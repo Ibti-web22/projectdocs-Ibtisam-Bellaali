@@ -4,17 +4,16 @@
 
 
 body{
-    background-color: antiquewhite;
-    color: #161717;
+    background-color: #FFFACD;
+    color: #000000;
     height:auto;
     min-height:100vh;
     font-family: 'Roboto';
 }
 
-header{
-    background-color: antiquewhite;
+header {
+    background-color: #FFFEF5;
     font-family: 'Montserrat';
-
 }
 
 pre{
@@ -61,3 +60,72 @@ h3 {
 }
 
 
+/* Layout: sidebar + content */
+.layout {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+/* Sidebar kader */
+.week-nav {
+    background-color: #FFFBEA;
+    border: 1px solid #E8E2B5;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 30px;
+}
+
+.week-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.week-nav li {
+    margin-bottom: 1rem;
+}
+
+.week-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.week-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content rechts */
+.content {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+/* Active link in sidebar */
+.week-nav a.active {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Footer onderaan houden + centreren */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
